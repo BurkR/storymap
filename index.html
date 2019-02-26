@@ -58,7 +58,6 @@
 
                     <h1 class="display-4 d-flex justify-content-center">Cities in Oregon</h1>
 
-
                     <small class="d-flex justify-content-center" style="color: rgba(255,255,255,0.95)">This story map
                         illustrates the major cities in
                         Oregon using a storytelling structure.
@@ -216,7 +215,7 @@
     var layers = {
         ESRI: {layer: L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}')},
         counties: {
-            layer: L.geoJson.ajax('../../assets/counties.geojson', {
+            layer: L.geoJson.ajax('assets/counties.geojson', {
                 color: 'orange',
                 weight: 2,
                 opacity: 0.3
