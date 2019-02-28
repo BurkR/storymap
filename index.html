@@ -213,9 +213,9 @@
     // }
 
     var layers = {
-        ESRI: {layer: L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}')},
+        ESRI: {layer: L.tileLayer('https://osugisci.maps.arcgis.com/apps/MapJournal/index.html?appid=7f1b52cd21d140c9b5c504c0e64b8a13')},
         counties: {
-            layer: L.geoJson.ajax('assets/counties.geojson', {
+            //layer: L.geoJson.ajax('assets/counties.geojson', {
                 color: 'orange',
                 weight: 2,
                 opacity: 0.3
