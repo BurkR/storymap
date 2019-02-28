@@ -168,8 +168,6 @@
 
 <!-- main javascript -->
 <script type="text/javascript">
-
-
     // Create Legend Contents in html format
     //var county_legend = '<i style="background: orange; opacity: 0.5"></i><p><b>Counties</b></p>';
    // var forest_legend = '<i style="background: green; opacity: 0.5"></i><p><b>Forest</b></p>';
@@ -180,7 +178,6 @@
     //      layer2: {layer: layer2, legend: legend2}
     //      ...
     // }
-
     var layers = {
         ESRI: {layer: L.tileLayer('https://osugisci.maps.arcgis.com/apps/MapJournal/index.html?appid=7f1b52cd21d140c9b5c504c0e64b8a13')},
         counties: {
@@ -235,8 +232,6 @@
                 marker: 'red',
                 position: 'bottomright'
             }).addTo(map);
-
-
             return map;
         }
     });
