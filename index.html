@@ -124,12 +124,12 @@
         <dt>
             <!--facebook icon-->
             <a class="fab fa-facebook-square btn"
-               href="https://facebook.com/sharer.php?u=http://geoviz.ceoas.oregonstate.edu/storymap/examples/2.5/video.html"
+               href="https://facebook.com/sharer.php?u=https://burkr.github.io/storymap2/index.html"
                target="_blank"></a>
         </dt>
         <dt>
             <!--facebook icon-->
-            <a class="fab fa-github btn" href="https://github.com/jakobzhao/storymap" style="top:40px"
+            <a class="fab fa-github btn" href="https://burkr.github.io/storymap2/index.html" style="top:40px"
                target="_blank"></a>
         </dt>
         <dt>
@@ -147,15 +147,15 @@
                     <h4 class="modal-title">About</h4>
                 </div>
                 <div class="modal-body">
-                    <p>This is a web map of major cities in Oregon. It is mainly made as a demo for a course GEOG 371:
-                        Web Mapping provided by Oregon State University. The story map library is derived from the
+                    <p>This is a story map of Culturally Significant Plants in Oregon. This is an assignment for course GEOG 371:
+                        Web Mapping from Oregon State University. The story map library is derived from the
                         storymap plugin for leaflet at <a>http://atlefren.github.io/storymap/</a>, and its functionality
                         relies on both leaflet and Boostrap.</p>
-                    <p><b>storymap.js</b> | Released Date: 02/20/2017 | Version: 2.5 | MIT License </p>
-                    <p><b>Author: Bo Zhao</b> | College of Earth, Ocean, Atmospheric Science | Oregon State University
+                    <p><b>storymap.js</b> | Released Date: 02/27/2019 | Version: 2.5 | </p>
+                    <p><b>Author: Rene Burk</b> | College of Masters of Arts and Interdisciplinary Studies | Oregon State University
                     </p>
-                    <p>The context about Oregon cities was collected from Wikipedia.</p>
-                    <p>The <a href="https://www.youtube.com/watch?v=UJ_vQC9PNY4">background video</a> on the front page
+                    <p>Maps of distributions are from the Oregon Flora Project</p>
+                    <p>The <a href="http://www.oregonflora.org/">background video</a> on the front page
                         was clipped from Youtube. </p>
                     <p>The favicon image was acquired from <a>http://www.udlcenter.org/advocacy/state/oregon.</a></p>
                     <p>This story map uses geospatial data from mapbox, Google Earth Engine, ESRI Map, Open Street Maps
@@ -171,8 +171,8 @@
 
 
     // Create Legend Contents in html format
-    var county_legend = '<i style="background: orange; opacity: 0.5"></i><p><b>Counties</b></p>';
-    var forest_legend = '<i style="background: green; opacity: 0.5"></i><p><b>Forest</b></p>';
+    //var county_legend = '<i style="background: orange; opacity: 0.5"></i><p><b>Counties</b></p>';
+   // var forest_legend = '<i style="background: green; opacity: 0.5"></i><p><b>Forest</b></p>';
 
     // For each layer, the first variable is the layer, the second is the legend. The layer variable can be any kinds of layers that leaflet.js supports.
     // var layers = {
@@ -188,29 +188,29 @@
                 color: 'orange',
                 weight: 2,
                 opacity: 0.3
-            }), legend: county_legend
+            }), legend: none  //county_legend
         },
         GEE: {
-            layer: L.tileLayer('http://earthengine.google.org/static/hansen_2013/tree_alpha/{z}/{x}/{y}.png'),
-            legend: forest_legend
+            layer: L.tileLayer('culturalandscape.png'),
+            legend: none  //forest_legend
         },
         satellite: {
-            layer: L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5icTFxZ3ZkdncifQ.P9MBej1xacybKcDN_jehvw', {
+            layer: L.tileLayer('img/camas-map.png', {
                 id: 'mapbox.satellite'
             })
         },
-        cartodb_light: {layer: L.tileLayer('http://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png')}
+        cartodb_light: {layer: L.tileLayer('img/huckleberry.png')}
     };
 
     var scenes = {
         overview: {lat: 44.0000000, lng: -123.5000000, zoom: 7, name: 'Cover Page', layers: []},
-        portland: {lat: 45.5186089, lng: -122.7270297, zoom: 11, name: 'Portland', layers: []},
-        corvallis: {lat: 44.5701158, lng: -123.2949388, zoom: 14, name: 'Corvallis', layers: [layers.ESRI]},
-        eugene: {lat: 44.0549563, lng: -123.0958048, zoom: 13, name: 'Eugene', layers: []},
-        salem: {lat: 44.9419055, lng: -123.0356407, zoom: 13, name: 'Salem', layers: []},
-        bend: {lat: 44.0519385, lng: -121.3042125, zoom: 14, name: 'Bend', layers: [layers.counties, layers.satellite]},
-        oregon: {lat: 44.0000000, lng: -123.5000000, zoom: 7, name: 'Oregon State', layers: [layers.GEE]},
-        end: {lat: 44.0000000, lng: -123.5000000, zoom: 7, name: 'The End'}
+        portland: {lat: 45.5186089, lng: -122.7270297, zoom: 11, name: 'Cultural Landscape', layers: []},
+        corvallis: {lat: 44.5701158, lng: -123.2949388, zoom: 14, name: 'Tribes: [layers.ESRI]},
+        eugene: {lat: 44.0549563, lng: -123.0958048, zoom: 13, name: 'Camas', layers: []},
+        salem: {lat: 44.9419055, lng: -123.0356407, zoom: 13, name: 'Camas Map', layers: []},
+        bend: {lat: 44.0519385, lng: -121.3042125, zoom: 14, name: 'Huckleberry', layers: [layers.counties, layers.satellite]},
+        oregon: {lat: 44.0000000, lng: -123.5000000, zoom: 7, name: 'Huckleberry Map', layers: [layers.GEE]},
+        end: {lat: 44.0000000, lng: -123.5000000, zoom: 7, name: 'Thanks for Watching!'}
     };
 
     $('#storymap').storymap({
