@@ -77,7 +77,7 @@
 
     var layers = {
         layer1: {
-            layer: L.tileLayer('http://arcg.is/1iyeeO'),            
+            layer: L.geoJson.ajax('http://arcg.is/1iyeeO'),            
                     
             legend: '<i style="background: black; opacity: 0.5"></i><p><b>legend 1</b></p>'
         },
@@ -86,7 +86,7 @@
             legend: '<i style="background: orange; opacity: 0.5"></i><p><b>legend 2</b></p>'
         },
         layer3: {
-            layer: L.tileLayer('huckleberry.geojson')
+            layer: L.geoJson.ajax('huckleberry.geojson')
         }
     };
 
