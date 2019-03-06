@@ -41,7 +41,7 @@ A social media button to share the storymap to Facebook or Twitter; (5 POINTS) T
 
 credit information or acknowledgement;   The credits are on Scene 5 of the story map. 
 
-A github button to point to your github repository.
+A github button to point to your github repository. There is a logo for Github at the bottom of the Credits along with a link to the storymap github respository. 
 
 The structure of your github repository should like something below.
 
@@ -53,4 +53,8 @@ The structure of your github repository should like something below.
 ├─css
 ├─img
 Deliverable
-Once you complete this lab assignment, please make sure both the github repository and the web site work appropriately. Then, you will need to submit the url of the GitHub repository to Canvas Dropbox. (On the assignment tab, press the Submit Assignment button to submit. Please contact the instructor or TA if you have any difficulty.)
+Once you complete this lab assignment, please make sure both the github repository and the web site work appropriately. Then, you will need to submit the url of the GitHub repository to Canvas Dropbox. (On the assignment tab, press the Submit Assignment button to submit. Please contact the instructor or TA if you have any difficulty.)  
+
+I had a lot of difficulty with this project and was unable to get enough help to include leaflet, ajax and other code you provided to work properly.  I spent at least 3 weeks trying to get it all to work and I did learn a ton about building web maps!  This is the best I could do!
+
+
