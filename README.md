@@ -29,11 +29,11 @@ The storymap should at least include the following controls.
 
 
 
-A favicon; (5 POINTS)
+A favicon; (5 POINTS) For the favicon I used an acorn, which was another important food source for the western oregon tribes.
 
 customized fonts for the texts of the storymap; (5 POINTS)
 
-The fonts used in this story map include open_sansregular, sans-serif both are easy to render on any device. 
+The fonts used in this story map include open_sansregular, sans-serif, both are easy to render on any device. 
 
 A video or image on the front or end page; (5 POINTS)  There are 4 images in this story map.  The Cultural landscape, the camas flower, the huckberry branch, and the thimbleberry at the end. 
 
